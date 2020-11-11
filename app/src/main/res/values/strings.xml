@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Appflix</string>
+    <string name="debug_tag">appify</string>
+    <string name="action_settings">Opciones</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">Menu principal</string>
+    <string name="second_fragment_label">Aqui va info</string>
+    <string name="next">siguiente</string>
+    <string name="previous">Regresar</string>
+
+    <string name="hello_first_fragment">First Fragment</string>
+    <string name="hello_second_fragment">Segunda pantalla Arg: %1$s</string>
+    <string name="cancel">Cancelar</string>
+    <string name="register">Regístrate</string>
+    <string name="login">Ingresa</string>
+    <string name="ui_email">Correo Electrónico</string>
+    <string name="ui_password">Contraseña</string>
+    <string name="ui_donthave">¿No tienes una cuenta?</string>
+    <string name="ui_points">Tus Puntos</string>
+</resources>
