@@ -35,8 +35,8 @@ class UserPoints : Fragment()
         // {} llaves
         // [] corchetes
         // <> menor que, mayor que
-        pointsText.text = "000";
-        Log.d( getString(R.string.debug_tag), "setting points text ");
+        pointsText.text = "000"
+        Log.d( getString(R.string.debug_tag), "onCreateView")
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.userpoints, container, false)
 
@@ -44,7 +44,7 @@ class UserPoints : Fragment()
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?)
     {
-        Log.d( getString(R.string.debug_tag), "onviewCreated");
+        Log.d( getString(R.string.debug_tag), "onviewCreated")
         /*
         super.onViewCreated(view, savedInstanceState)
 
@@ -52,5 +52,11 @@ class UserPoints : Fragment()
             findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
         }
          */
+    }
+
+    override fun onPause()
+    {
+        super.onPause()
+        Log.d( getString(R.string.debug_tag), "onPause")
     }
 }

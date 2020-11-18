@@ -9,11 +9,10 @@ import androidx.appcompat.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
-import android.widget.TextView
-import android.widget.Toast
-import com.google.android.material.snackbar.Snackbar
+import androidx.fragment.app.FragmentManager
 
 import kotlinx.android.synthetic.main.activity_main.*
+
 
 class MainActivity : AppCompatActivity()
 {
@@ -43,6 +42,7 @@ class MainActivity : AppCompatActivity()
         Log.d(getString(R.string.debug_tag) , "valor cambiado");
     }
 
+    /*
     override fun onCreateOptionsMenu(menu: Menu): Boolean
     {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -52,11 +52,14 @@ class MainActivity : AppCompatActivity()
 
     public fun onLoginButtonClick(view:View)
     {
-        setContentView(R.layout.userpoints);
+        //val fm = supportFragmentManager
+
     }
 
     public fun onRegisterButtonClick(view:View)
     {
         Log.d(getString(R.string.debug_tag), "click en boton de registro");
     }
+
+    */
 }

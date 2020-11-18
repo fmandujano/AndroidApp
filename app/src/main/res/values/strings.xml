@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Appflix</string>
+    <string name="app_name">Appify</string>
     <string name="debug_tag">appify</string>
     <string name="action_settings">Opciones</string>
     <!-- Strings used for fragments for navigation -->
