@@ -21,20 +21,7 @@ class MainActivity : AppCompatActivity()
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         Log.d(getString(R.string.debug_tag), "App creada");
-        emailField.addTextChangedListener(  object: TextWatcher {
-            override fun afterTextChanged(s: Editable?) {
-            }
 
-            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
-            }
-
-            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int)
-            {
-                Log.d(getString(R.string.debug_tag), "texto en emailField cambia");
-                if( emailField.text.length > 1)
-                    loginButton.isEnabled = true;
-            }
-        });
     }
 
     fun onValueChanged()
