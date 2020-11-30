@@ -27,5 +27,19 @@
         <action
             android:id="@+id/action_login_to_welcome"
             app:destination="@id/welcome" />
+        <action
+            android:id="@+id/action_login_to_register"
+            app:destination="@id/register" />
     </fragment>
+    <fragment
+        android:id="@+id/webTest"
+        android:name="com.sae.miapp.WebTest"
+        android:label="WebTest"
+        tools:layout="@layout/web_test"
+        />
+    <fragment
+        android:id="@+id/register"
+        android:name="com.sae.miapp.Register"
+        android:label="Register"
+        tools:layout="@layout/register"/>
 </navigation>

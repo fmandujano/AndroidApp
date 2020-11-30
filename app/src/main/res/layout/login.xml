@@ -36,6 +36,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/lobster"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
                 android:text="@string/app_name"
                 android:textAlignment="center"
                 android:textAllCaps="false"
@@ -46,7 +48,8 @@
                 android:id="@+id/usernameLabel"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/ui_email"
+                android:paddingTop="10dp"
+                android:text="@string/ui_username"
                 android:textAlignment="center" />
 
             <EditText
@@ -60,6 +63,7 @@
                 android:id="@+id/passLabel"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:paddingTop="10dp"
                 android:text="@string/ui_password"
                 android:textAlignment="center" />
 

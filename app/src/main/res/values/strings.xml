@@ -14,7 +14,10 @@
     <string name="register">Regístrate</string>
     <string name="login">Ingresa</string>
     <string name="ui_email">Correo Electrónico</string>
-    <string name="ui_password">Contraseña</string>
+    <string name="ui_username">Usuario</string>
+    <string name="ui_password">Contraseña (Matrícula)</string>
     <string name="ui_donthave">¿No tienes una cuenta?</string>
     <string name="ui_points">Tus Puntos</string>
+    <string name="ui_registersoon">Próximamente podrás disfrutar de los servicios de nuestra app. Siguenos en nuestras redes sociales.</string>
+    <string name="ui_network_error">Error al conectar al servidor</string>
 </resources>
