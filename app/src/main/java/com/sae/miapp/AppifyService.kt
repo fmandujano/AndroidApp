@@ -1,5 +1,7 @@
 package com.sae.miapp
 
+import android.widget.ImageView
+import androidx.core.net.toUri
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import retrofit2.Call
@@ -10,6 +12,8 @@ import retrofit2.http.Field
 import retrofit2.http.FormUrlEncoded
 import retrofit2.http.GET
 import retrofit2.http.POST
+
+import com.bumptech.glide.Glide
 
 //funciones para consultar la API web de Appify
 
@@ -59,3 +63,17 @@ data class UserProperty(
     val error:String
 )
 
+
+fun bindImage(imgView: ImageView, imgUrl: String?) {
+    imgUrl?.let {
+        val imgUri = imgUrl.toUri().buildUpon().scheme("http").build()
+        Glide.with(imgView.context).load(imgUri).into(imgView)
+    }
+}
+
+fun bindImageHTTPS(imgView: ImageView, imgUrl: String?) {
+    imgUrl?.let {
+        val imgUri = imgUrl.toUri().buildUpon().scheme("https").build()
+        Glide.with(imgView.context).load(imgUri).into(imgView)
+    }
+}

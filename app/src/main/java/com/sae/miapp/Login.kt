@@ -64,8 +64,14 @@ class Login : Fragment()
                             binding.passField.setText("")
                         }
                         else {
-                            //si no hubo, navegar a la siguiente pantalla
-                            view.findNavController().navigate(R.id.action_login_to_welcome)
+                            //si no hubo error, navegar a la siguiente pantalla
+                            val bundle:Bundle = Bundle()
+                            bundle.putString("username",  response.body()?.user)
+                            bundle.putString("lastname",  response.body()?.last_name)
+                            bundle.putString("id",  pass)
+                            bundle.putInt("xp", response.body()?.xp!!.toInt() )
+
+                            view.findNavController().navigate(R.id.action_login_to_welcome, bundle)
                             //enviar datos a la sig pantalla que vienen en response.body()
                             //view.findNavController().graph.
 

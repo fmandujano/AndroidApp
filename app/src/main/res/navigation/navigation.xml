@@ -18,6 +18,9 @@
         <action
             android:id="@+id/action_welcome_to_userPoints"
             app:destination="@id/userPoints" />
+        <action
+            android:id="@+id/action_welcome_to_mainMenu"
+            app:destination="@id/mainMenu" />
     </fragment>
     <fragment
         android:id="@+id/login"
@@ -42,4 +45,9 @@
         android:name="com.sae.miapp.Register"
         android:label="Register"
         tools:layout="@layout/register"/>
+    <fragment
+        android:id="@+id/mainMenu"
+        android:name="com.sae.miapp.MainMenu"
+        android:label="MainMenu"
+        tools:layout="@layout/fragment_main_menu"/>
 </navigation>
