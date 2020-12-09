@@ -16,9 +16,6 @@
         android:label="Welcome"
         tools:layout="@layout/welcome">
         <action
-            android:id="@+id/action_welcome_to_userPoints"
-            app:destination="@id/userPoints" />
-        <action
             android:id="@+id/action_welcome_to_mainMenu"
             app:destination="@id/mainMenu" />
     </fragment>
@@ -49,5 +46,17 @@
         android:id="@+id/mainMenu"
         android:name="com.sae.miapp.MainMenu"
         android:label="MainMenu"
-        tools:layout="@layout/fragment_main_menu"/>
+        tools:layout="@layout/fragment_main_menu">
+        <action
+            android:id="@+id/action_mainMenu_to_blankFragment"
+            app:destination="@id/blankFragment" />
+        <action
+            android:id="@+id/action_mainMenu_to_userPoints"
+            app:destination="@id/userPoints" />
+    </fragment>
+    <fragment
+        android:id="@+id/blankFragment"
+        android:name="com.sae.miapp.BlankFragment"
+        android:label="BlankFragment"
+        tools:layout="@layout/fragment_blank"/>
 </navigation>

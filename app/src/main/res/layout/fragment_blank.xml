@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/titulo"
+                android:layout_width="match_parent"
+                android:layout_height="96dp"
+                android:layout_marginTop="80dp"
+                android:text="Canción de la semana"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/mensaje"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/ui_dalelike"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/titulo" />
+
+            <Button
+                android:id="@+id/buttonPlay"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="68dp"
+                android:layout_marginTop="32dp"
+                android:text="▶"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mensaje" />
+
+            <Button
+                android:id="@+id/buttonStop"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="68dp"
+                android:text="■"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mensaje" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
+import androidx.navigation.findNavController
 import com.sae.miapp.databinding.FragmentMainMenuBinding
 
 // TODO: Rename parameter arguments, choose names that match
@@ -36,6 +37,10 @@ class MainMenu : Fragment() {
         // Inflate the layout for this fragment
         //return inflater.inflate(R.layout.fragment_main_menu, container, false)
         val binding = DataBindingUtil.inflate<FragmentMainMenuBinding>(inflater, R.layout.fragment_main_menu, container,false)
+
+        binding.songTitle.setOnClickListener { view:View ->
+            view.findNavController().navigate(R.id.action_mainMenu_to_blankFragment)
+        }
 
         return binding.root
     }

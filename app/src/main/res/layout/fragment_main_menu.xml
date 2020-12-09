@@ -12,12 +12,12 @@
 
         <TextView
             android:id="@+id/titulo"
-            android:layout_width="273dp"
-            android:layout_height="56dp"
+            android:layout_width="274dp"
+            android:layout_height="29dp"
             android:layout_marginStart="24dp"
             android:layout_marginTop="24dp"
             android:text="Noticias"
-            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -98,19 +98,34 @@
 
         <TextView
             android:id="@+id/swagTitle"
-            android:layout_width="274dp"
-            android:layout_height="50dp"
+            android:layout_width="272dp"
+            android:layout_height="29dp"
             android:layout_marginTop="16dp"
             android:text="Swag Shop"
-            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.521"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
+        <TextView
+            android:id="@+id/songTitle"
+            android:layout_width="272dp"
+            android:layout_height="29dp"
+            android:layout_marginTop="20dp"
+            android:background="#FF9800"
+            android:text="Canción de la Semana"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.52"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gridLayout" />
+
         <androidx.gridlayout.widget.GridLayout
-            android:layout_width="267dp"
-            android:layout_height="151dp"
+            android:id="@+id/gridLayout"
+            android:layout_width="271dp"
+            android:layout_height="110dp"
             android:layout_marginTop="12dp"
             app:columnCount="2"
             app:layout_constraintBottom_toBottomOf="parent"
